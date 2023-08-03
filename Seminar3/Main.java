@@ -48,19 +48,14 @@ public class Main {
             throw new InvalidDataException("Некоторые данные отсутствуют");
         }
 
-        // Ваши дополнительные проверки данных
-
-        // Пример проверки формата даты рождения
         if (!birthDate.matches("\\d{2}\\.\\d{2}\\.\\d{4}")) {
             throw new InvalidDataException("Неверный формат даты рождения");
         }
 
-        // Пример проверки формата номера телефона
         if (!phoneNumber.matches("\\d+")) {
             throw new InvalidDataException("Неверный формат номера телефона");
         }
 
-        // Пример проверки значения пола
         if (!gender.equals("f") && !gender.equals("m")) {
             throw new InvalidDataException("Неверное значение пола укажите m или f");
         }
